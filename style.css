@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(242, 181, 201);
+}
+
+.Menu-principal {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+.cabeçalho {
+    margin: 0 10%;
+    width: calc(100% - 20%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Logo {
+    flex: 1;
+}
+
+.Logo img {
+    width: 200px;
+    height: 160px;
+}
+
+button {
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    border: 2px solid #007bff; /* Adiciona uma borda aos botões */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos botões */
+}
+
+button:hover {
+    background-color: #8eb7f1;
+}
+
+button:active {
+    box-shadow: 0 3px #878787;
+    transform: translateY(4px);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.Aluna {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 600px;
+    font-size: 20px;
+    margin-top: 120px; /* Adiciona espaço suficiente para o cabeçalho fixo */
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.Conteudo {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 20px;
+    flex: 3;
+    text-align: left;
+}
+
+.Conteudo img{
+    width: 500px; /* Ajuste o tamanho do GIF conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    vertical-align: middle; /* Alinha o GIF verticalmente com o texto */
+    align-items: center;
+}
+
+.conteiner video{
+    width: 500px; /* Ajuste o tamanho do GIF conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .cabeçalho {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .conteiner {
+        flex-direction: column;
+        width: 90%;
+    }
+
+}
+
+.rodape {
+    background-color: #f1f1f1; /* Cor de fundo do rodapé */
+    color: #333; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    border-top: 1px solid #ddd; /* Linha superior para separar do conteúdo */
+    position: relative; /* Garante que o rodapé esteja no final do conteúdo */
+    width: 100%; /* Ocupa toda a largura da página */
+    bottom: 0; /* Fica fixo na parte inferior */
+}
+
+.container-rodape {
+    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+.info-rodape {
+    margin-bottom: 10px; /* Espaço abaixo das informações */
+}
+
+.links-rodape a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 0 10px; /* Espaço entre os links */
+}
+
+.links-rodape a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o mouse */
+}
+
